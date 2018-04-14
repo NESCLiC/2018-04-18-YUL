@@ -359,7 +359,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
-
+<div>
   <h3>Data</h3>
   <p>In preparation for this lesson, you will need to download two zipped files and place them in the specified folder:
 
@@ -375,12 +375,14 @@ $ cd
 $ cd Desktop/python-novice-inflammation/data
 ```
 If you are using Windows, you can use the `cmd` (Command Prompt) program instead of the Unix shell.
-The easiest way to start it is by pressing `Windows Logo Key` + `R` (run dialog) and entering `cmd`.In Windows, the commands above to access the folder in your Desktop become:
+The easiest way to start it is by pressing `Windows Logo Key` + `R` (run dialog) and entering `cmd`. In Windows, the commands above to access the folder in your Desktop become:
 
 ```
 $ cd /D %userprofile%\Desktop\python-novice-inflammation\data
 ```
   </p>
+</div>
+<div>
   <h3>Jupyter Notebook</h3>
   <p>To start the notebook server, open a terminal or git bash and execute the command:
 
@@ -390,7 +392,7 @@ $ jupyter notebook
 
 Then create a new notebook using the drop-down menu on the right to select 'Python 3 notebook':
 
-![](../fig/new-notebook.png)
+![](https://swcarpentry.github.io/python-novice-inflammation/fig/new-notebook.png)
 
 To start the Python interpreter without the notebook, open a terminal
 or command prompt and execute the command:
@@ -405,3 +407,4 @@ Note: If using Git Bash on Windows, you have to call Python via `winpty`:
 $ winpty python
 ```
   </p>
+</div>
