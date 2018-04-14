@@ -373,6 +373,5 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </div>
 <div id='jupyter-setup'>
   <h3>Jupyter Notebook</h3>
-  <p>To start the notebook server, open a terminal or git bash and execute the command: jupyter notebook</p>
-  <p>Then create a new notebook using the drop-down menu on the right to select 'Python 3 notebook'.</p>
+  <p>To start the notebook server, open a terminal or git bash and execute the command: 'jupyter notebook'. Then create a new notebook using the drop-down menu on the right to select 'Python 3 notebook'.</p>
 </div>
