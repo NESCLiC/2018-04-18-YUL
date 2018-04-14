@@ -359,38 +359,34 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
+
   <h3>Data</h3>
-  In preparation for this lesson, you will need to download two zipped files and place them in the specified folder:
+  <p>In preparation for this lesson, you will need to download two zipped files and place them in the specified folder:
 
 1. Make a new folder in your Desktop called `python-novice-inflammation`.
-2. Download [python-novice-inflammation-data.zip][zipfile1] and move the file to this folder.
-3. Also download [python-novice-inflammation-code.zip][zipfile2] and move it to the same folder.
+2. Download [python-novice-inflammation-data.zip](https://swcarpentry.github.io/python-novice-inflammation/data/python-novice-inflammation-data.zip) and move the file to this folder.
+3. Also download [python-novice-inflammation-code.zip](https://swcarpentry.github.io/python-novice-inflammation/code/python-novice-inflammation-code.zip) and move it to the same folder.
 4. If the files aren't unzipped yet, double-click to unzip them. You should end up with
 two new folders called `data` and `code`.
 5. To get started, go into the `data` folder from the Unix shell with:
 
-~~~
+```
 $ cd
 $ cd Desktop/python-novice-inflammation/data
-~~~
-{: .source}
-
+```
 If you are using Windows, you can use the `cmd` (Command Prompt) program instead of the Unix shell.
 The easiest way to start it is by pressing `Windows Logo Key` + `R` (run dialog) and entering `cmd`.In Windows, the commands above to access the folder in your Desktop become:
 
-~~~
+```
 $ cd /D %userprofile%\Desktop\python-novice-inflammation\data
-~~~
-{: .source}
-
+```
+  </p>
   <h3>Jupyter Notebook</h3>
+  <p>To start the notebook server, open a terminal or git bash and execute the command:
 
-To start the notebook server, open a terminal or git bash and execute the command:
-
-~~~
+```
 $ jupyter notebook
-~~~
-{: .source}
+```
 
 Then create a new notebook using the drop-down menu on the right to select 'Python 3 notebook':
 
@@ -399,19 +395,13 @@ Then create a new notebook using the drop-down menu on the right to select 'Pyth
 To start the Python interpreter without the notebook, open a terminal
 or command prompt and execute the command:
 
-~~~
+```
 $ python
-~~~
-{: .source}
+```
 
 Note: If using Git Bash on Windows, you have to call Python via `winpty`:
 
-~~~
+```
 $ winpty python
-~~~
-{: .source}
-
-[zipfile1]: {{ page.root }}/data/python-novice-inflammation-data.zip
-[zipfile2]: {{ page.root }}/code/python-novice-inflammation-code.zip
-
-  
+```
+  </p>
