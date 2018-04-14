@@ -260,21 +260,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if page.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  To participate in this workshop, you will need access to the software described below. In addition, you will need an up-to-date web browser.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
+  Software Carpentry maintains a list of common issues that occur during installation that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
@@ -370,3 +359,59 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
+  <h3>Data</h3>
+  In preparation for this lesson, you will need to download two zipped files and place them in the specified folder:
+
+1. Make a new folder in your Desktop called `python-novice-inflammation`.
+2. Download [python-novice-inflammation-data.zip][zipfile1] and move the file to this folder.
+3. Also download [python-novice-inflammation-code.zip][zipfile2] and move it to the same folder.
+4. If the files aren't unzipped yet, double-click to unzip them. You should end up with
+two new folders called `data` and `code`.
+5. To get started, go into the `data` folder from the Unix shell with:
+
+~~~
+$ cd
+$ cd Desktop/python-novice-inflammation/data
+~~~
+{: .source}
+
+If you are using Windows, you can use the `cmd` (Command Prompt) program instead of the Unix shell.
+The easiest way to start it is by pressing `Windows Logo Key` + `R` (run dialog) and entering `cmd`.In Windows, the commands above to access the folder in your Desktop become:
+
+~~~
+$ cd /D %userprofile%\Desktop\python-novice-inflammation\data
+~~~
+{: .source}
+
+  <h3>Jupyter Notebook</h3>
+
+To start the notebook server, open a terminal or git bash and execute the command:
+
+~~~
+$ jupyter notebook
+~~~
+{: .source}
+
+Then create a new notebook using the drop-down menu on the right to select 'Python 3 notebook':
+
+![](../fig/new-notebook.png)
+
+To start the Python interpreter without the notebook, open a terminal
+or command prompt and execute the command:
+
+~~~
+$ python
+~~~
+{: .source}
+
+Note: If using Git Bash on Windows, you have to call Python via `winpty`:
+
+~~~
+$ winpty python
+~~~
+{: .source}
+
+[zipfile1]: {{ page.root }}/data/python-novice-inflammation-data.zip
+[zipfile2]: {{ page.root }}/code/python-novice-inflammation-code.zip
+
+  
